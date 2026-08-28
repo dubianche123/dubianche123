@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Leo Wang</title>
+  <desc id="desc">Romantic machinery. Verifiable behavior. A geometric loom made of precise luminous threads.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080a10" />
+      <stop offset="0.55" stop-color="#0d111b" />
+      <stop offset="1" stop-color="#101522" />
+    </linearGradient>
+    <linearGradient id="threadCool" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6d5dfc" stop-opacity="0" />
+      <stop offset="0.32" stop-color="#8174ff" />
+      <stop offset="0.72" stop-color="#55c7ff" />
+      <stop offset="1" stop-color="#55c7ff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="threadWarm" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f1b45b" stop-opacity="0" />
+      <stop offset="0.35" stop-color="#f1b45b" />
+      <stop offset="0.75" stop-color="#db7adf" />
+      <stop offset="1" stop-color="#db7adf" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#7969ff" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#7969ff" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#b9c2d0" stroke-opacity="0.045" stroke-width="1" />
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <clipPath id="frameClip">
+      <rect x="1" y="1" width="1198" height="358" rx="24" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frameClip)">
+    <rect width="1200" height="360" fill="url(#background)" />
+    <rect width="1200" height="360" fill="url(#grid)" />
+    <circle cx="930" cy="180" r="270" fill="url(#halo)" />
+
+    <g opacity="0.28" stroke="#c6ceda" stroke-width="1">
+      <path d="M760 54V306" />
+      <path d="M804 40V320" />
+      <path d="M848 32V328" />
+      <path d="M892 28V332" />
+      <path d="M936 28V332" />
+      <path d="M980 32V328" />
+      <path d="M1024 40V320" />
+      <path d="M1068 54V306" />
+    </g>
+
+    <g fill="none" stroke-linecap="round" filter="url(#glow)">
+      <path d="M690 98C770 98 797 141 858 141S949 98 1135 98" stroke="url(#threadCool)" stroke-width="2" />
+      <path d="M690 126C778 126 802 161 870 161S968 126 1135 126" stroke="url(#threadWarm)" stroke-width="1.6" />
+      <path d="M690 154C780 154 815 178 884 178S975 154 1135 154" stroke="url(#threadCool)" stroke-width="1.4" />
+      <path d="M690 180H1135" stroke="url(#threadWarm)" stroke-width="2.2" />
+      <path d="M690 206C780 206 815 182 884 182S975 206 1135 206" stroke="url(#threadCool)" stroke-width="1.4" />
+      <path d="M690 234C778 234 802 199 870 199S968 234 1135 234" stroke="url(#threadWarm)" stroke-width="1.6" />
+      <path d="M690 262C770 262 797 219 858 219S949 262 1135 262" stroke="url(#threadCool)" stroke-width="2" />
+    </g>
+
+    <g transform="translate(914 180) rotate(45)" fill="#0d111b" stroke="#d9deea">
+      <rect x="-34" y="-34" width="68" height="68" stroke-opacity="0.72" stroke-width="1.2" />
+      <rect x="-19" y="-19" width="38" height="38" stroke="#8f83ff" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="4" fill="#f4f1ff" stroke="none" filter="url(#glow)" />
+    </g>
+
+    <g fill="#dfe5ef">
+      <circle cx="804" cy="126" r="2.6" />
+      <circle cx="848" cy="206" r="2.6" />
+      <circle cx="980" cy="154" r="2.6" />
+      <circle cx="1024" cy="234" r="2.6" />
+    </g>
+
+    <text x="74" y="66" fill="#8792a5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="2.6">// DUBIANCHE123</text>
+    <text x="72" y="159" fill="#f2f4f8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="62" font-weight="650" letter-spacing="-1.8">LEO WANG</text>
+    <text x="76" y="207" fill="#c5ccd8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="450" letter-spacing="2.1">ROMANTIC MACHINERY · VERIFIABLE BEHAVIOR</text>
+    <text x="76" y="270" fill="#727e91" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.7">AGENT RUNTIMES  /  CONTEXT ENGINEERING  /  LOCAL INTELLIGENCE</text>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="358" rx="24" fill="none" stroke="#30394a" stroke-width="2" />
+</svg>
