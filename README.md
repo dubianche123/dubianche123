@@ -3,40 +3,33 @@
 </p>
 
 <p align="center">
-  I build agent runtimes and context systems across cloud and device boundaries—<br />
-  usually where probabilistic models need deterministic machinery around them.
+  I build the machinery beneath intelligent software: agent runtimes and context systems,<br />
+  from cloud infrastructure to on-device intelligence.<br />
+  I care about making probabilistic systems dependable without making their complexity the user's problem.
 </p>
 
 <p align="center">
   <code>Agent Runtimes</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Context Engineering</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Cloud Architecture</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>On-Device Intelligence</code>
 </p>
 
-## In the workshop
+## What I'm building
 
-### Axiom Loom
+I'm currently building **Axiom Loom**, a local-first agent runtime for continuous context, memory, and multi-agent orchestration.
 
-**A local-first agent runtime for continuous context, memory, and multi-agent orchestration.**
-
-Finite context windows should be an implementation detail, not something users have to manage.
+The idea is simple: finite context windows should remain an implementation detail, not something users have to manage.
 
 > **Rigorous underneath. Effortless in motion.**
 
-## Selected systems
+## A few things I've built
 
-| System | What it explores |
+| Project | What I was exploring |
 |:--|:--|
-| **[The Norn Machine](https://github.com/dubianche123/deterministic-context-assembly)** | Deterministic context assembly beneath a ritual-like interface. Code makes the judgment; the model renders it. |
-| **[Neural-Janitor](https://github.com/dubianche123/device-native-tab-hygiene)** | Device-native tab hygiene that learns locally through Core ML instead of exporting personal behavior to the cloud. |
-| **[Bounded Coding Delegation](https://github.com/dubianche123/bounded-coding-delegation)** | Local coding-agent execution with bounded review loops, process cleanup, and structured handoff. |
+| **[The Norn Machine](https://github.com/dubianche123/deterministic-context-assembly)** | A ritual-like interface built on deterministic context assembly. Code makes the judgment; the model renders it. |
+| **[Neural-Janitor](https://github.com/dubianche123/device-native-tab-hygiene)** | A device-native tab hygiene engine that learns locally through Core ML rather than exporting personal behavior to the cloud. |
+| **[Bounded Coding Delegation](https://github.com/dubianche123/bounded-coding-delegation)** | A local coding-agent helper with bounded review loops, process cleanup, and structured handoff. |
 
-## A way of building
+## How I work
 
-```text
-Keep authority explicit.
-Put complexity beneath the interface.
-Stay local when the data is personal.
-Let architecture outlive the provider.
-Measure the claims that matter.
-```
+I tend to put deterministic control wherever authority matters, keep personal data local when I can, and design architectures that can outlive any one provider. I like useful defaults more than walls of configuration, and I try to back the claims that matter with measurements.
 
-I am interested in systems where deterministic software and probabilistic intelligence each do the part they are best at—and where difficult machinery produces a calm, continuous experience.
+That usually leaves me working at the point where models stop being demos and start becoming dependable software.
