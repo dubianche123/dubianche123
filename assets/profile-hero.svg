@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
   <title id="title">Leo Wang</title>
-  <desc id="desc">Romantic machinery. Verifiable behavior. A geometric loom made of precise luminous threads.</desc>
+  <desc id="desc">Where precision becomes instinct. A geometric system made of precise luminous threads.</desc>
 
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
@@ -80,8 +80,8 @@
 
     <text x="74" y="66" fill="#8792a5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="2.6">// DUBIANCHE123</text>
     <text x="72" y="159" fill="#f2f4f8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="62" font-weight="650" letter-spacing="-1.8">LEO WANG</text>
-    <text x="76" y="207" fill="#c5ccd8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="450" letter-spacing="2.1">ROMANTIC MACHINERY · VERIFIABLE BEHAVIOR</text>
-    <text x="76" y="270" fill="#727e91" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.7">AGENT RUNTIMES  /  CONTEXT ENGINEERING  /  LOCAL INTELLIGENCE</text>
+    <text x="76" y="207" fill="#c5ccd8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="450" letter-spacing="2.1">WHERE PRECISION BECOMES INSTINCT.</text>
+    <text x="76" y="270" fill="#727e91" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.7">AGENT RUNTIMES  /  CONTEXT SYSTEMS  /  CLOUD + EDGE</text>
   </g>
 
   <rect x="1" y="1" width="1198" height="358" rx="24" fill="none" stroke="#30394a" stroke-width="2" />

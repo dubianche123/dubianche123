@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="./assets/profile-hero.svg" alt="Leo Wang — Romantic machinery. Verifiable behavior." width="100%" />
+  <img src="./assets/profile-hero.svg" alt="Leo Wang — Where precision becomes instinct." width="100%" />
 </p>
 
 <p align="center">
-  I build local-first and context-native systems that absorb complexity beneath the surface—<br />
-  deterministic where control matters, adaptive where intelligence helps.
+  I build agent runtimes and context systems across cloud and device boundaries—<br />
+  usually where probabilistic models need deterministic machinery around them.
 </p>
 
 <p align="center">
-  <code>Agent Runtimes</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Context Engineering</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>On-Device Intelligence</code>
+  <code>Agent Runtimes</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Context Engineering</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Cloud Architecture</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>On-Device Intelligence</code>
 </p>
 
 ## In the workshop
@@ -35,11 +35,8 @@ Finite context windows should be an implementation detail, not something users h
 Keep authority explicit.
 Put complexity beneath the interface.
 Stay local when the data is personal.
+Let architecture outlive the provider.
 Measure the claims that matter.
 ```
 
 I am interested in systems where deterministic software and probabilistic intelligence each do the part they are best at—and where difficult machinery produces a calm, continuous experience.
-
-<p align="center">
-  <sub>Poetry gives the machine a soul. Engineering keeps it honest.</sub>
-</p>
