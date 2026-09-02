@@ -22,11 +22,11 @@ The idea is simple: finite context windows should remain an implementation detai
 
 ## A few things I've built
 
-| Project | What I was exploring |
+| Repository | What I was exploring |
 |:--|:--|
-| **[The Norn Machine](https://github.com/dubianche123/deterministic-context-assembly)** | A ritual-like interface built on deterministic context assembly. Code makes the judgment; the model renders it. |
-| **[Neural-Janitor](https://github.com/dubianche123/device-native-tab-hygiene)** | A device-native tab hygiene engine that learns locally through Core ML rather than exporting personal behavior to the cloud. |
-| **[Bounded Coding Delegation](https://github.com/dubianche123/bounded-coding-delegation)** | A local coding-agent helper with bounded review loops, process cleanup, and structured handoff. |
+| **[deterministic-context-assembly](https://github.com/dubianche123/deterministic-context-assembly)** | **The Norn Machine** — A ritual-like interface built on deterministic context assembly. Code makes the judgment; the model renders it. |
+| **[device-native-tab-hygiene](https://github.com/dubianche123/device-native-tab-hygiene)** | **Neural-Janitor** — A device-native tab hygiene engine that learns locally through Core ML rather than exporting personal behavior to the cloud. |
+| **[bounded-coding-delegation](https://github.com/dubianche123/bounded-coding-delegation)** | **Bounded Coding Delegation** — A local coding-agent helper with bounded review loops, process cleanup, and structured handoff. |
 
 ## How I work
 
