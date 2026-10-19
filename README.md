@@ -20,13 +20,18 @@ The idea is simple: finite context windows should remain an implementation detai
 
 > **Rigorous underneath. Effortless in motion.**
 
-## A few things I've built
+## Selected projects
 
-| Repository | What I was exploring |
+These projects explore the same idea at different scales: give code clear responsibilities, keep context deliberate, and make an agent's behavior inspectable.
+
+| Project | What you can explore |
 |:--|:--|
-| **[deterministic-context-assembly](https://github.com/dubianche123/deterministic-context-assembly)** | **The Norn Machine** — A ritual-like interface built on deterministic context assembly. Code makes the judgment; the model renders it. |
-| **[device-native-tab-hygiene](https://github.com/dubianche123/device-native-tab-hygiene)** | **Neural-Janitor** — A device-native tab hygiene engine that learns locally through Core ML rather than exporting personal behavior to the cloud. |
-| **[bounded-coding-delegation](https://github.com/dubianche123/bounded-coding-delegation)** | **Loop Warden** — A local coding-agent supervisor for bounded delegation, review loops, process cleanup, and structured handoff. |
+| **[AgenticX Decision](https://github.com/dubianche123/agenticX-decision-public)** | Evidence-backed document review with bounded retrieval, explicit Python rule tools and AgenticX orchestration. A local console exposes rules, evidence and structured results; synthetic offline examples make the workflow easy to try. |
+| **[The Regular · 老群友](https://github.com/dubianche123/micro-banter-harness)** | A resident QQ group companion with code-owned relationships, rolling memory and activation gates. Local commands and cache-aware provider fallback turn a conversational character into a small, inspectable harness. |
+| **[The Norn Machine](https://github.com/dubianche123/deterministic-context-assembly)** | An image-selection experience built on deterministic context assembly. Python computes a structured behavioral profile before Bedrock renders the narrative; benchmark artifacts expose the context and latency trade-offs. |
+| **[Loop Warden](https://github.com/dubianche123/bounded-coding-delegation)** | Bounded delegation to local coding CLIs: explicit task/workspace contracts, tests and review, limited fixups, process cleanup and a compact JSON handoff with detailed artifacts on disk. |
+| **[Neural-Janitor](https://github.com/dubianche123/device-native-tab-hygiene)** | On-device tab retention learning through a Swift / Core ML companion. Start with previews, let readiness gate cleanup, and inspect or restore closed tabs through the recovery history. |
+| **[Leo Paper Feed](https://github.com/dubianche123/leo-paper-feed)** | The public JSON / Markdown publication layer for a paper-reading app: date/channel organization, a documented data contract and a small reader-integration example. |
 
 ## How I work
 
