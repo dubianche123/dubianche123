@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  I build agent runtimes, context pipelines, and local-first developer tools —<br />
-  mostly at the boundary where LLMs stop being demos and have to behave like dependable software.
+  I build agent runtimes, context-compression pipelines, and local-first developer tools —<br />
+  focused on the boundary where probabilistic models have to behave like dependable systems.
 </p>
 
 <p align="center">
@@ -17,26 +17,26 @@
 
 ## What I'm working on
 
-Most of my time lately goes into **Axiom Loom**, a local-first agent runtime focused on long-horizon context, layered memory, and multi-agent orchestration.
+Most of my research and engineering lately goes into **Axiom Loom** — a headless, local-first agent runtime built around a simple question: *how should an agent manage a long-horizon session when context windows are finite and prefix-cache hits dominate real inference cost?*
 
-The problem I keep coming back to is simple: finite context windows, flaky tool loops, and runaway token costs should be handled by the runtime — not pushed onto the user as configuration chores.
+Instead of treating context management as naive "summarize when full," Axiom separates an **append-only ground-truth session log** from a **hot model-context projection**, keeps tool outputs as **immutable on-demand evidence** rather than stuffing full blobs into the active window, and treats asynchronous compaction as a **cache-aware systems trade-off** (balancing token reduction against prefix-cache invalidation and landing latency).
 
-## Projects you can poke around in
+## Flagship & selected projects
 
-A lot of my side projects start from a concrete annoyance — a group bot that talks too much, a browser with 90 open tabs, a coding sub-agent that dumps 8,000 tokens of logs into the parent context, or an LLM trying to do mental math on a PDF. Across all of them, the recurring pattern is the same: **let deterministic code own state and rules, and let the model do what it's actually good at.**
+Across my open-source work, the core thesis stays the same at different scales: **let deterministic code own state, math, and boundaries; let the language model focus on interpretation and expression.**
 
-| Project | Why it exists & what's inside |
+| Project | Role & what's inside |
 |:--|:--|
-| **[The Regular · 老群友](https://github.com/dubianche123/the-regular-qq-bot)** | Most chat bots fail because they reply to everything and forget who you are. This one lives in QQ groups mostly lurking: Python owns an 8-tier relationship ledger (with asymmetric daily caps so one bad model call won't ruin a friendship), a 6-hour mood half-life, circadian "wake-up grumpiness," and rolling digests. Includes a zero-key `regular demo`. |
-| **[Neural-Janitor](https://github.com/dubianche123/neural-janitor-tab-manager)** | Built out of frustration with timer-based tab closers that kill active work docs while leaving 20 Google search tabs open. A macOS Chrome/Edge extension + local Swift & Core ML companion that learns from your real `Ctrl+W` closes, isolates search results into their own bucket, and gates auto-cleanup behind `Test → Armed → Deploy`. |
-| **[Loop Warden](https://github.com/dubianche123/coding-agent-supervisor)** | Extracted from real multi-agent coding runs in Hermes. Wraps local Gemini CLI and Codex CLI in a bounded implement–test–review–fixup loop, reaps orphan process groups on timeout, and returns a ~320-token JSON brief on stdout while keeping full logs on disk. |
-| **[The Norn Machine](https://github.com/dubianche123/norn-context-engineering)** | On the surface, a mystical image-selection personality test; underneath, a benchmark for deterministic context assembly. Pure Python computes the 4D behavioral vector, round decay, and choice-revision signals first (compressing 30-round overflow sessions from ~15k tokens down to ~2.4k), and Amazon Bedrock only renders the narrative. |
-| **[AgenticX Decision](https://github.com/dubianche123/agenticx-document-review)** | LLMs are bad at mental arithmetic and date math buried in long PDFs. In this research harness, an AgenticX ReAct agent retrieves text snippets with character offsets, hand-written Python tools judge numeric/deadline/cross-file rules, and a local web console lays out the evidence for human review. |
-| **[AgenticX Workbench](https://github.com/dubianche123/agenticx-agent-workbench)** | Preview distribution of the broader AgenticX stack in one repo: the Python agent runtime & SDK, an Electron local-first desktop workspace, and a Go AI gateway + enterprise portal. |
-| **[Leo Paper Feed](https://github.com/dubianche123/paper-reading-notes-feed)** | The public, Git-versioned JSON + Markdown data feed backing my daily paper-reading app — kept as a zero-backend static publication layer that any reader client can fetch directly. |
+| **[The Norn Machine](https://github.com/dubianche123/norn-context-engineering)**<br><sub>Flagship · Context Engineering</sub> | **Deterministic context assembly benchmarked on AWS Serverless ([Live Demo](https://d3gncg0hircdt9.cloudfront.net/)).** Wrapped in a ritualistic image-selection test, pure Python (`fast_thinker.py`) computes the 4D behavioral vector, round decay ($e^{r/R}$), capped hesitation bonus ($1.12\times$), and choice-revision signals *before* calling Amazon Bedrock — compressing 30-round overflow sessions from **15,107 → 2,383 input tokens** and cutting end-to-end cost by **47%** (with full benchmark JSONs and honest TTFT trade-off analysis checked in). |
+| **[The Regular · 老群友](https://github.com/dubianche123/the-regular-qq-bot)**<br><sub>Multi-Turn Social Harness</sub> | **Bringing cache-ordered context and code-owned state into a living group-chat character.** Most bots fail because they reply to everything and forget who you are. Here, Python owns an 8-tier relationship ledger (with asymmetric daily caps so one bad model call won't ruin a friendship), a 6-hour mood half-life, 3 a.m. wake-up grumpiness, and a 4-layer cache-friendly prompt prefix (`Stable Head → Rolling Digest → History → Turn`). Includes a zero-key `regular demo`. |
+| **[Loop Warden](https://github.com/dubianche123/coding-agent-supervisor)**<br><sub>Sub-Agent Supervision</sub> | **Bounded local delegation for Gemini CLI & Codex CLI.** Extracted from real multi-agent coding runs in Hermes: enforces workspace locks, runs a bounded `implement → test → tiered review → fixup` loop, reaps orphan process groups on timeout, and returns a **~320-token JSON brief** on `stdout` (~95% context reduction vs. raw logs) while keeping full artifacts on disk. |
+| **[AgenticX Decision](https://github.com/dubianche123/agenticx-document-review)**<br><sub>Evidence-Backed Audit</sub> | **Because LLMs shouldn't do mental arithmetic on 50-page PDFs.** Each audit rule runs in an isolated AgenticX ReAct loop: `search_text` retrieves snippets with character offsets, hand-written Python rule tools hold verdict authority over numeric/parity/deadline/cross-file checks, and a fail-closed validator blocks ungrounded outputs in a local web console. |
+| **[Neural-Janitor](https://github.com/dubianche123/neural-janitor-tab-manager)**<br><sub>On-Device ML · macOS</sub> | **Built out of frustration with timer-based tab closers that kill active work docs while leaving 20 search tabs open.** A Chrome/Edge extension + local Swift & Core ML companion (`The Chronos Engine`) that learns from your real `Cmd+W` closes, measures background idle (`now - lastBackgroundedAt`), isolates search results into their own bucket, deletes learning samples when you restore an auto-closed tab, and gates cleanup behind `Test → Armed → Deploy`. |
+| **[AgenticX Workbench](https://github.com/dubianche123/agenticx-agent-workbench)**<br><sub>Full-Stack Agent Platform</sub> | **Preview distribution of the broader AgenticX stack in one codebase:** the Python agent runtime & SDK, an Electron local-first multi-agent desktop workspace, and a Go AI gateway + enterprise control plane. |
+| **[Leo Paper Feed](https://github.com/dubianche123/paper-reading-notes-feed)**<br><sub>Zero-Backend Data Layer</sub> | **Git-as-a-feed:** the public, versioned JSON + Markdown publication surface backing my daily paper-reading app, designed so any reader client can consume daily notes in ~20 lines of code without a backend server. |
 
 ## Engineering habits
 
-- **Code holds the ledger; models write the prose.** If a decision involves counters, deadlines, permissions, or retry limits, I put it in Python/Swift/Go rather than hoping a prompt stays obedient.
-- **Treat the context window like a cacheable prefix.** Put stable persona and rules up front, compress raw history into structured state, and keep inter-agent handoffs small enough to read at a glance.
-- **Local-first where it counts.** Browsing habits, group-chat archives, and workspace locks belong on the machine you control, with clear export paths when you switch devices.
+- **Code holds the ledger; models write the prose.** If a decision involves counters, coordinate math, deadlines, permissions, or retry limits, I write it in deterministic Python/Swift/Go rather than hoping a prompt stays obedient.
+- **Treat the context window as a cacheable prefix.** Put stable rules and persona up front, compress raw interaction history into structured state before inference, and measure whether compaction actually beats prefix caching.
+- **Local-first where it counts.** Browsing habits, group-chat archives, and workspace locks belong on the machine you control, with clean export paths when you switch devices.
