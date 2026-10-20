@@ -168,7 +168,7 @@
     <text x="72" y="159" fill="#f2f4f8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="62" font-weight="650" letter-spacing="-1.8">LEO WANG</text>
     <text class="tagline" x="76" y="207" fill="#c5ccd8" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="19" font-weight="450" letter-spacing="2.1">WHERE PRECISION BECOMES INSTINCT.</text>
     <rect class="tagline-sweep" x="-280" y="180" width="240" height="38" fill="url(#taglineLight)" clip-path="url(#taglineClip)" />
-    <text class="scope-line" x="76" y="270" fill="#727e91" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.7">AGENT RUNTIMES  /  CONTEXT SYSTEMS  /  CLOUD + EDGE</text>
+    <text class="scope-line" x="76" y="270" fill="#727e91" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.7">BOUNDED &amp; ECONOMICAL INTELLIGENCE  /  CONTEXT &amp; RUNTIMES</text>
   </g>
 
   <rect x="1" y="1" width="1198" height="358" rx="24" fill="none" stroke="#30394a" stroke-width="2" />

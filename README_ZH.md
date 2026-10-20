@@ -7,12 +7,12 @@
 </p>
 
 <p align="center">
-  我主要做智能软件底下的系统层：Agent 运行时、上下文压缩管道，以及本地优先的开发工具——<br />
-  核心关注点只有一个：怎么让本质上不确定的大模型，在真实工程里跑得像个可预期、算得清账的系统。
+  围绕 <strong>Bounded &amp; Economical Intelligence（有界且经济的智能）</strong> 构建系统底层：<br />
+  用确定性的代码管住边界、状态与 Token 账本，让本质上不确定的大模型在真实工程里跑得既守规矩、又算得清成本。
 </p>
 
 <p align="center">
-  <code>Agent 运行时</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>上下文工程</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>云架构</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>端侧智能</code>
+  <code>有界智能 (Bounded AI)</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>上下文工程</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>缓存经济学</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>本地优先系统</code>
 </p>
 
 ## 最近在做什么
@@ -23,7 +23,7 @@
 
 ## 代表作与精选项目
 
-下面这些项目尺度不同，但验证的是同一条工程主线：**让确定性的代码掌管状态、数学与边界，只把“理解与表达”留给大模型。**
+下面这些项目尺度不同，但都在回答同一个问题——怎么做出 **Bounded & Economical Intelligence（有界且经济的智能）**：让确定性的代码掌管状态、数学与硬边界，把上下文和缓存命中当成一等公民来算账，只把“理解与表达”留给大模型。
 
 | 项目 | 定位 & 核心看点 |
 |:--|:--|

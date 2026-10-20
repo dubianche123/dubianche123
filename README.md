@@ -7,12 +7,12 @@
 </p>
 
 <p align="center">
-  I build agent runtimes, context-compression pipelines, and local-first developer tools —<br />
-  focused on the boundary where probabilistic models have to behave like dependable systems.
+  Building toward <strong>Bounded &amp; Economical Intelligence</strong> —<br />
+  agent runtimes, context-compression pipelines, and local-first tools where deterministic code owns the boundaries, state, and token budget so probabilistic models can focus on what they do best.
 </p>
 
 <p align="center">
-  <code>Agent Runtimes</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Context Engineering</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Cloud Architecture</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>On-Device Intelligence</code>
+  <code>Bounded Intelligence</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Context Engineering</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Prefix-Cache Economics</code>&nbsp;&nbsp;·&nbsp;&nbsp;<code>Local-First Systems</code>
 </p>
 
 ## What I'm working on
@@ -23,7 +23,7 @@ Instead of treating context management as naive "summarize when full," Axiom sep
 
 ## Flagship & selected projects
 
-Across my open-source work, the core thesis stays the same at different scales: **let deterministic code own state, math, and boundaries; let the language model focus on interpretation and expression.**
+Across my open-source work, every project explores a different facet of **bounded & economical intelligence**: let deterministic code own state, math, and hard guardrails; treat context and cache hits as a first-class budget; and reserve the language model for interpretation and expression.
 
 | Project | Role & what's inside |
 |:--|:--|
