@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How AXIOM Drive Backup accesses, encrypts, stores, and deletes personal backup data.">
+  <title>Privacy / 隐私说明 — AXIOM Drive Backup</title>
+  <style>
+    :root { color-scheme: light dark; --ink: #162331; --muted: #526171; --paper: #f7f9fb; --line: #d8e0e8; --link: #125a91; }
+    * { box-sizing: border-box; }
+    body { margin: 0 auto; max-width: 880px; padding: 36px 24px; color: var(--ink); background: var(--paper); font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    header { border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; }
+    a { color: var(--link); text-underline-offset: 3px; }
+    h1 { margin: 24px 0 8px; font-size: clamp(28px, 6vw, 40px); line-height: 1.25; letter-spacing: -.03em; }
+    h2 { margin-top: 0; font-size: 24px; }
+    h3 { margin: 24px 0 6px; font-size: 18px; }
+    p { margin: 10px 0; }
+    .subtitle, footer { color: var(--muted); }
+    section { padding: 32px 0; border-bottom: 1px solid var(--line); }
+    footer { padding-top: 24px; font-size: 14px; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e7edf4; --muted: #b0bfce; --paper: #121a23; --line: #344454; --link: #8cc8f7; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navigation">
+      <a href="./">Home / 首页</a>
+      <a href="privacy.html" aria-current="page">Privacy / 隐私说明</a>
+      <a href="#zh" lang="zh-CN">中文</a>
+      <a href="#en">English</a>
+    </nav>
+    <h1>AXIOM Drive Backup<br>Privacy / 隐私说明</h1>
+    <p class="subtitle">Updated / 更新日期：2026-10-25</p>
+  </header>
+  <main>
+    <section id="zh" lang="zh-CN" aria-labelledby="zh-title">
+      <h2 id="zh-title">中文隐私说明</h2>
+      <h3>用途与访问范围</h3>
+      <p>本应用是个人本机备份工具，使用 restic 与 rclone 将本人选择的本地数据备份到本人的 Google Drive。Google 授权仅申请 <code>drive.file</code>，仅创建和管理本应用创建的备份文件，不读取 Drive 中无关的文件。Google 用户数据仅用于这里说明的备份、检查和恢复用途。</p>
+      <h3>加密与云端保存</h3>
+      <p>restic 快照内的文件内容与路径在本机加密后上传。备份说明、隐私说明等运维文字可能在私人 Drive 中以明文保存；不能把 Drive 目录中的每个文件都视为已加密。Google Drive 还可能处理存储对象的大小、时间和传输等服务元数据。</p>
+      <h3>凭证与恢复密码</h3>
+      <p>OAuth 凭证仅保存在本机受限配置目录中，不发布到本网站。restic 恢复密码由用户管理，并按用户设置保存在 Apple Passwords；用户启用 iCloud“密码与钥匙串”后可通过该服务同步。本应用不把恢复密码写入公开说明或备份快照。</p>
+      <h3>内容收集与共享</h3>
+      <p>没有自建服务器收集备份内容，不出售这些内容，也不将其用于广告。备份存储由用户选择的 Google Drive 提供；本网站由 GitHub Pages 托管。本说明页没有表单、JavaScript、自建访问分析或外部字体。</p>
+      <h3>保留与删除</h3>
+      <p>用户管理云端备份的保留时间。要删除全部云端备份，可在 Google Drive 中删除本应用创建的整个 restic 仓库目录；运维说明文件可单独删除。若只清理个别快照，应使用 restic 的快照保留与清理命令，不要手工删除仓库内部文件，因为多个快照可能共享数据。如需永久删除，还应按 Google Drive 提供的方式清空回收站。删除云端副本不会自动删除本机副本。</p>
+      <h3>撤销授权</h3>
+      <p>可在 <a href="https://myaccount.google.com/connections">Google 账号的第三方应用与服务连接</a>中找到 AXIOM Drive Backup，移除其访问权限。撤销授权会阻止本应用继续使用该授权访问 Drive，但不自动删除已有的云端备份；删除数据仍需在 Drive 中操作。</p>
+      <h3>联系与说明更新</h3>
+      <p>通过公开 <a href="https://github.com/dubianche123">GitHub profile</a> 联系维护者。若用途或数据处理方式发生变化，本说明应同步更新。本页不表示某次备份已完成，也不承诺百分之百恢复或永久安全。</p>
+    </section>
+    <section id="en" lang="en" aria-labelledby="en-title">
+      <h2 id="en-title">English privacy notice</h2>
+      <h3>Purpose and access</h3>
+      <p>This is a personal utility running on the user's own computer. It uses restic and rclone to back up selected local data to the user's own Google Drive. Google authorization requests only <code>drive.file</code>, to create and manage backup files created by this application. It does not read unrelated Drive files. Google user data is used only for the backup, checking, and recovery purposes described here.</p>
+      <h3>Encryption and cloud storage</h3>
+      <p>File contents and paths within restic snapshots are encrypted locally before upload. Operational text, including backup instructions and privacy notices, may be stored as plaintext in the user's private Drive; not every file in a Drive folder should be assumed encrypted. Google Drive may also process service metadata such as object sizes, timestamps, and transfer information.</p>
+      <h3>Credentials and recovery password</h3>
+      <p>OAuth credentials are kept only in a restricted local configuration directory and are not published on this website. The user manages the restic recovery password and stores it in Apple Passwords according to their settings. It can sync through iCloud Passwords &amp; Keychain when the user enables that service. This utility does not put the recovery password in public documentation or backup snapshots.</p>
+      <h3>Collection and sharing</h3>
+      <p>No self-operated server collects backup contents. These contents are not sold or used for advertising. The user's Google Drive provides backup storage, and GitHub Pages hosts this website. These information pages have no forms, JavaScript, self-operated analytics, or external fonts.</p>
+      <h3>Retention and deletion</h3>
+      <p>The user controls cloud-backup retention. To remove all cloud backups, delete the entire restic repository folder created by this application in Google Drive. Operational instruction files can be deleted separately. To remove individual snapshots, use restic's snapshot retention and cleanup commands; do not manually delete files inside the repository, as snapshots may share data. For permanent deletion, also empty the trash using Google Drive's controls. Removing cloud copies does not automatically remove local copies.</p>
+      <h3>Revoke access</h3>
+      <p>Find AXIOM Drive Backup in your <a href="https://myaccount.google.com/connections">Google Account connections to third-party apps and services</a> and remove its access. Revoking authorization prevents further Drive access using that authorization; it does not automatically delete existing cloud backups. Remove those separately in Drive if desired.</p>
+      <h3>Contact and updates</h3>
+      <p>Contact the maintainer through the public <a href="https://github.com/dubianche123">GitHub profile</a>. This notice should be updated when the utility's purposes or data practices change. This page does not certify completion of any backup or promise complete recovery or permanent security.</p>
+    </section>
+  </main>
+  <footer><p><a href="./">Return to AXIOM Drive Backup / 返回首页</a></p></footer>
+</body>
+</html>

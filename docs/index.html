@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AXIOM Drive Backup: a personal, local backup utility using restic and rclone with Google Drive.">
+  <title>AXIOM Drive Backup</title>
+  <style>
+    :root { color-scheme: light dark; --ink: #162331; --muted: #526171; --paper: #f7f9fb; --line: #d8e0e8; --link: #125a91; }
+    * { box-sizing: border-box; }
+    body { margin: 0 auto; max-width: 880px; padding: 36px 24px; color: var(--ink); background: var(--paper); font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    header { border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; }
+    a { color: var(--link); text-underline-offset: 3px; }
+    h1 { margin: 24px 0 8px; font-size: clamp(30px, 6vw, 44px); line-height: 1.2; letter-spacing: -.03em; }
+    h2 { margin-top: 0; font-size: 24px; }
+    p { margin: 12px 0; }
+    .subtitle, footer { color: var(--muted); }
+    section { padding: 32px 0; border-bottom: 1px solid var(--line); }
+    footer { padding-top: 24px; font-size: 14px; }
+    @media (prefers-color-scheme: dark) { :root { --ink: #e7edf4; --muted: #b0bfce; --paper: #121a23; --line: #344454; --link: #8cc8f7; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navigation">
+      <a href="./" aria-current="page">Home / 首页</a>
+      <a href="privacy.html">Privacy / 隐私说明</a>
+      <a href="#zh" lang="zh-CN">中文</a>
+      <a href="#en">English</a>
+    </nav>
+    <h1>AXIOM Drive Backup</h1>
+    <p class="subtitle">Personal backups, managed on your own computer.<br><span lang="zh-CN">在本人电脑上管理的个人备份工具。</span></p>
+  </header>
+  <main>
+    <section id="zh" lang="zh-CN" aria-labelledby="zh-title">
+      <h2 id="zh-title">用途与工作方式</h2>
+      <p>AXIOM Drive Backup 是供个人使用的本机备份配置，使用 restic 和 rclone，将本人选择的本地数据备份到本人的 Google Drive。它不提供公众注册服务，也没有接收备份内容的自建服务器。</p>
+      <p>Google 授权仅使用 <code>drive.file</code> 权限，用于创建和管理本应用创建的备份文件；不读取 Google Drive 中与本应用无关的文件。restic 快照内的文件内容与路径在本机加密后上传。备份说明等运维文字可能在私人 Drive 中以明文保存。</p>
+      <p>备份由用户在本机发起和管理。本页介绍用途与数据处理方式，不表示某次备份已经完成，也不保证所有数据均可恢复。详细的数据保存、删除和撤销授权方式见<a href="privacy.html#zh">隐私说明</a>。</p>
+    </section>
+    <section id="en" lang="en" aria-labelledby="en-title">
+      <h2 id="en-title">Purpose and operation</h2>
+      <p>AXIOM Drive Backup is a personal backup setup that runs locally. It uses restic and rclone to back up selected local data to the user's own Google Drive. It is not a public registration service and has no self-operated server receiving backup contents.</p>
+      <p>Google authorization uses only the <code>drive.file</code> scope to create and manage backup files created by this application. It does not read unrelated files in Google Drive. File contents and paths within restic snapshots are encrypted locally before upload. Operational text, such as backup instructions, may be stored as plaintext in the user's private Drive.</p>
+      <p>The user initiates and manages backups on their own computer. This page describes the utility and its data practices; it does not certify completion of any backup or guarantee recovery of all data. Read the <a href="privacy.html#en">privacy notice</a> for storage, deletion, and authorization controls.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Contact / 联系：<a href="https://github.com/dubianche123">dubianche123 on GitHub</a></p>
+    <p>Static information pages. No JavaScript, analytics, or external fonts.<br><span lang="zh-CN">静态说明页，不使用 JavaScript、访问分析或外部字体。</span></p>
+  </footer>
+</body>
+</html>
